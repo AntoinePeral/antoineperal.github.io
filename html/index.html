@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Antoine Peral Web Page</title>
 </head>
 
 <body>
     
-    <header>
-        <h1>Hello World bienvenu sur ma page web</h1>
-        <nav>
-            <ul>
-                <li>CV</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+    <header class="header">
+        <div class="header__up-title">
+            <h1 class="header__title">Antoine Peral</h1>
+            <h2 class="header__subtitle">Web developer</h2>
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-item">Acceuil</li>
+                <li class="nav-item">CV</li>
+                <li class="nav-item">Portfolio</li>
+                <li class="nav-item">Contact</li>
             </ul>
         </nav>
+
     </header>
 
-    <main>
+    <main class="page">
+        <div class="page__gauche">
+            <h1 class="page__gauche-title">Hello <span class="page__subtitle">and welcome !</span> </h1>
+            <p class="page__gauche-content">Je m'appelle <strong>Antoine Peral</strong></p>
+            <p class="page__gauche-content"> Je suis développeur web spécialisé dans le JavaScript</p>
+        </div>
+
+        <div class="page__droite">
+        
+        </div>
 
     </main>
 
 
-    <footer></footer>
+    <footer>
+
+    </footer>
 
 </body>
 </html>
