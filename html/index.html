@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
     <title>Antoine Peral Web Page</title>
 </head>
 
@@ -14,14 +17,25 @@
     <header class="header">
         <div class="header__up-title">
             <h1 class="header__title">Antoine Peral</h1>
-            <h2 class="header__subtitle">Web developer</h2>
+            <h2 class="header__subtitle">Web 
+                <span class="header__subtitle-job">developer</span>  
+                <span class="header__subtitle-spe">Spé JS</span> 
+            </h2>
         </div>
         <nav class="nav">
             <ul class="nav-links">
-                <li class="nav-item">Acceuil</li>
-                <li class="nav-item">CV</li>
-                <li class="nav-item">Portfolio</li>
-                <li class="nav-item">Contact</li>
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link nav-item-link--current">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">Contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -29,13 +43,16 @@
 
     <main class="page">
         <div class="page__gauche">
-            <h1 class="page__gauche-title">Hello <span class="page__subtitle">and welcome !</span> </h1>
-            <p class="page__gauche-content">Je m'appelle <strong>Antoine Peral</strong></p>
-            <p class="page__gauche-content"> Je suis développeur web spécialisé dans le JavaScript</p>
+            <h1 class="page__gauche-title">Hello <span class="page__gauche-subtitle">and welcome !</span> 
+            </h1>
+            <div  class="page__gauche-content">
+                <p class="page__gauche-text">Je m'appelle <strong class="page__gauche-text-important">Antoine Peral</strong></p>
+                <p class="page__gauche-text"> Je suis <strong class="page__gauche-text-important">développeur web</strong> spécialisé dans le <span class="page__gauche-text-js">JavaScript</span> </p>
+            </div>
         </div>
 
         <div class="page__droite">
-        
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos porro numquam soluta saepe, at, a dolor esse reiciendis similique fuga ab delectus consectetur perspiciatis nihil suscipit debitis aspernatur facere magnam!</p>
         </div>
 
     </main>

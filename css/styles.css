@@ -1,3 +1,148 @@
-.header{
-   
+/** Partie Header  */
+:root{
+    --main-color: #fff;
+    --second-color: rgb(75, 71, 71);
+    --third-color: rgb(2, 175, 2);
+    --fourth-color: rgb(172, 167, 167);
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--second-color);
+    padding: 1.2rem;
+
+}
+
+.header__up-title{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+}
+
+.header__title{
+    color: var(--main-color);
+    font-size: 2rem;
+
+}
+
+
+.header__subtitle{
+    color: var(--main-color);
+    font-size: 1.3rem;
+}
+
+.header__subtitle-spe{
+    color: var(--third-color);
+}
+
+.header__subtitle-job{
+    font-weight: bold;
+}
+
+
+.nav{
+    width: 50%;
+}
+
+.nav-item{
+    display: inline;
+}
+
+
+.nav-item-link{
+    color: var(--fourth-color);
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-out;
+    padding: 0.5rem;
+
+}
+
+.nav-item-link:hover{
+    color: var(--main-color);
+    
+
+
+}
+
+.nav-item-link--current{
+    color: var(--main-color);
+    border-bottom: 0.5rem var(--main-color) dotted;
+}
+
+
+
+/** Partie Page  */
+
+.page{
+    display: flex;
+    width: 100%;
+}
+
+.page__gauche{
+    width: 50%;
+    padding: 8rem 5rem 10rem 12rem;
+    box-sizing: border-box;
+}
+
+.page__gauche-title{
+    color: var(--second-color);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.page__gauche-subtitle{
+    color: var(--main-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    background-color: var(--second-color);
+    padding: 1.2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.page__gauche-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.page__gauche-text{
+    font-size: 1.5rem;
+    color: var(--second-color);
+    margin: 2rem 0 0 0;
+    text-align: center;
+    display: block;
+    width: 58%;
+
+}
+
+.page__gauche-text-important{
+    font-weight: bold;
+}
+
+.page__gauche-text-js{
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+
+.page__droite{
+    width: 50%;
+}
+
+/** Partie footer  */
+
