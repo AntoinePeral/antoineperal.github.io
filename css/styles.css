@@ -1,3 +1,4 @@
+/* stylelint-disable CssSyntaxError */
 /** Partie Header  */
 :root{
     --main-color: #fff;
@@ -10,28 +11,30 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+
 .header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: var(--second-color);
+    /* display: flex;
+    flex-direction: column;
+    align-content: flex-start; */
+    width: auto;
+    background: linear-gradient(140deg, rgba(252,203,37,0.5) 0%, rgba(255,32,12,0.5) 100%);
     padding: 1.2rem;
 
 }
 
 .header__up-title{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 50%;
+    display: none;
 }
 
 .header__title{
     color: var(--main-color);
     font-size: 2rem;
-
 }
-
 
 .header__subtitle{
     color: var(--main-color);
@@ -47,36 +50,31 @@ body{
 }
 
 
-.nav{
-    width: 50%;
+.nav-links{
+    display: flex;
 }
 
-.nav-item{
+/* .nav-item{
     display: inline;
-}
+} */
 
 
 .nav-item-link{
     color: var(--fourth-color);
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.5s ease-out;
-    padding: 0.5rem;
+    padding: 0.2rem;
+    width: auto;
 
 }
 
 .nav-item-link:hover{
     color: var(--main-color);
-    
-
-
-}
-
-.nav-item-link--current{
-    color: var(--main-color);
     border-bottom: 0.5rem var(--main-color) dotted;
+
 }
 
 
@@ -85,13 +83,17 @@ body{
 
 .page{
     display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .page__gauche{
-    width: 50%;
-    padding: 8rem 5rem 10rem 12rem;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 3rem 1rem 2rem 1rem;
+    height: 50vh;
+    /* box-sizing: border-box; */
 }
 
 .page__gauche-title{
@@ -103,8 +105,8 @@ body{
 .page__gauche-subtitle{
     color: var(--main-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(140deg, rgba(252,203,37,0.5) 0%, rgba(255,32,12,0.5) 100%);
     display: block;
-    background-color: var(--second-color);
     padding: 1.2rem;
     font-size: 2rem;
     display: flex;
@@ -126,7 +128,7 @@ body{
     margin: 2rem 0 0 0;
     text-align: center;
     display: block;
-    width: 58%;
+    width: 60%;
 
 }
 
@@ -140,9 +142,90 @@ body{
 }
 
 
+/** partie Droite */ 
+
 .page__droite{
-    width: 50%;
+    width: 100%;
+    background-image:linear-gradient(229deg, rgba(252,203,37,0.5) 0%, rgba(255,32,12,0.5) 100%), url(../images/cormet-roselend-germ-photogrpahy.jpg);
+    height: 50vh;
+    background-size: cover;
+
+}
+
+.container-design{
+    padding: 5rem 4rem 3rem 6rem;
+
+}
+
+.container-design__text{
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    letter-spacing: 1.5rem;
+}
+
+.container-design__text--IGN{
+    letter-spacing: 1.5rem;
+    padding-left: 0.9rem;
 }
 
 /** Partie footer  */
 
+
+/** Media queries */
+
+@media screen and (min-width: 600px){
+    
+    .header__up-title{
+        width: 94%;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav{
+        width: 100%;
+    }
+    .nav-links{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    .page{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+
+    .page__gauche{
+        height: 100%;
+        box-sizing: border-box;
+        width: 50%;
+    }
+
+    .page__droite{
+        background-repeat: no-repeat;
+        height: 100%;
+        box-sizing: border-box;
+        width: 50%;
+        background-size: cover;
+    }
+    .triangle{
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-bottom : 8rem solid rgb(228, 133, 133);
+        border-left : 108rem solid transparent;
+        position: absolute;
+        bottom: -8rem;
+        right: 0;
+           
+    }
+}
