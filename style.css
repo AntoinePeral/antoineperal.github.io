@@ -121,11 +121,29 @@ h1{
 @media screen and (max-width: 1300px) {
   .left-nav{
     left: -300px!important;
+
+    width: 15rem;
+    min-height:  300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
   }
 
   .menu-visible{
     left: 0px!important;
   }
+
+  .blocs-menu:nth-child(1){
+    display: none;
+  }
+
+  .blocs-menu:nth-last-child(1){
+    display: none;
+  }
+
 
   .btn-menu-container{
     width: 7rem;
